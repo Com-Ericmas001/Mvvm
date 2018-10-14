@@ -1,23 +1,6 @@
-# Com.Ericmas001.Mvvm
+# Com.Ericmas001.Mvvm ![GitHub](https://img.shields.io/github/license/Com.Ericmas001/Mvvm.svg)
 
-###Current Version: 0.1.0 *(2018-10-14)*
+[![Build Status](https://ericmas001.visualstudio.com/Com.Ericmas001/_apis/build/status/Com.Ericmas001.Mvvm)](https://ericmas001.visualstudio.com/Com.Ericmas001/_build/latest?definitionId=3)
 
-<table align="center" width="100%">
-    <tbody>
-        <tr>
-            <td rowspan>.Net</td>
-            <td align="center">
-            <a href="https://www.nuget.org/packages/Com.Ericmas001.Mvvm/" target="_blank">
-            Com.Ericmas001.Mvvmn <br />
-            <img src="https://github.com/Com-Ericmas001/Common/raw/master/Resources/nuget.png" alt="NuGet" width=150 />
-            </a>
-            </td>
-            <td align="left">
-                <div class="nuget-badge">
-                    <b>PM&gt; Install-Package Com.Ericmas001.Mvvmn</b> <br />
-                    or Install via VS <a href="https://docs.nuget.org/consume/package-manager-dialog" target="_blank">Package Management</a> window.
-                </div>
-            </td>
-        </tr>
-    </tbody>
-</table>
+[![NuGet](https://img.shields.io/badge/package-Com.Ericmas001.Mvvm-blue.svg)](https://www.nuget.org/packages/Com.Ericmas001.Mvvm) [![NuGet](https://img.shields.io/nuget/v/Com.Ericmas001.Mvvm.svg)](https://www.nuget.org/packages/Com.Ericmas001.Mvvm)
+[![NuGet](https://img.shields.io/nuget/dt/Com.Ericmas001.Mvvm.svg?style=social)](https://www.nuget.org/packages/Com.Ericmas001.Mvvm)
