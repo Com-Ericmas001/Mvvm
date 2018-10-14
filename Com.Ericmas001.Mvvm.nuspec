@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Com.Ericmas001.Mvvm</id>
+    <version>0.1.0</version>
+    <title>Com.Ericmas001.Mvvm</title>
+    <authors>Ericmas001</authors>
+    <licenseUrl>https://raw.githubusercontent.com/Com-Ericmas001/Mvvm/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Com-Ericmas001/Mvvm</projectUrl>
+    <iconUrl>https://github.com/Com-Ericmas001/Common/raw/master/Resources/lib.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Com.Ericmas001.Mvvm</description>
+    <summary>Com.Ericmas001.Mvvm</summary>
+    <releaseNotes>Development Version</releaseNotes>
+    <copyright />
+    <language>en</language>
+    <dependencies>
+      <dependency id="Expression.Blend.Sdk" version="1.0.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Com.Ericmas001.Mvvm\bin\$configuration$\Com.Ericmas001.Mvvm.dll" target="lib\net461\" />
+    <file src="Com.Ericmas001.Mvvm\bin\$configuration$\Com.Ericmas001.Mvvm.pdb" target="lib\net461\" />
+    <file src="Com.Ericmas001.Mvvm\bin\$configuration$\Com.Ericmas001.Mvvm.xml" target="lib\net461\" />
+  </files>
+</package>
