@@ -1,4 +1,4 @@
-# Com.Ericmas001.Mvvm ![GitHub](https://img.shields.io/github/license/Com.Ericmas001/Mvvm.svg)
+# Com.Ericmas001.Mvvm ![GitHub](https://img.shields.io/github/license/Com-Ericmas001/Mvvm.svg)
 
 [![Build Status](https://ericmas001.visualstudio.com/Com.Ericmas001/_apis/build/status/Com.Ericmas001.Mvvm)](https://ericmas001.visualstudio.com/Com.Ericmas001/_build/latest?definitionId=3)
 
