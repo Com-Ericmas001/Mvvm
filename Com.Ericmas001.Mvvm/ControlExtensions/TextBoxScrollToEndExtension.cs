@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+* This has been taken over from O. R. Mapper's stackoverflow answer
+* 
+* -> https://stackoverflow.com/a/12346543/2612789
+* 
+*/
+
+using System;
 using System.Windows;
 using System.Windows.Controls;
 

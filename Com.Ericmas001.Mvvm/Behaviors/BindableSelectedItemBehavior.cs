@@ -1,7 +1,7 @@
 ﻿/*
 * This has been taken over from bitbonk's stackoverflow answer
 * 
-* -> https://stackoverflow.com/questions/11065995/binding-selecteditem-in-a-hierarchicaldatatemplate-applied-wpf-treeview/18700099#18700099
+* -> https://stackoverflow.com/a/18700099/2612789
 * 
 */
 

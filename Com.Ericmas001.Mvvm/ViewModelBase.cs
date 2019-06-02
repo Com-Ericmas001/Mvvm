@@ -9,8 +9,8 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Reflection;
 using System.Linq.Expressions;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 
 namespace Com.Ericmas001.Mvvm
@@ -95,7 +95,7 @@ namespace Com.Ericmas001.Mvvm
         /// <returns>True if the PropertyChanged event has been raised,
         /// false otherwise. The event is not raised if the old
         /// value is equal to the new value.</returns>
-        protected bool Set<T>(Expression<Func<T>> propertyExpression,ref T field,T newValue)
+        protected bool Set<T>(Expression<Func<T>> propertyExpression, ref T field, T newValue)
         {
             if (EqualityComparer<T>.Default.Equals(field, newValue))
                 return false;
@@ -118,7 +118,7 @@ namespace Com.Ericmas001.Mvvm
         /// <returns>True if the PropertyChanged event has been raised,
         /// false otherwise. The event is not raised if the old
         /// value is equal to the new value.</returns>
-        protected bool Set<T>(string propertyName,ref T field,T newValue)
+        protected bool Set<T>(string propertyName, ref T field, T newValue)
         {
             if (EqualityComparer<T>.Default.Equals(field, newValue))
             {
