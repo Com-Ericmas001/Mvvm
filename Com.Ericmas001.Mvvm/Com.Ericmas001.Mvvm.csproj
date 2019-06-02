@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Behaviors\BindableSelectedItemBehavior.cs" />
     <Compile Include="Collections\FastObservableCollection.cs" />
+    <Compile Include="ControlExtensions\TextBoxScrollToEndExtension.cs" />
     <Compile Include="Extensions\DependencyObjectExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModelBase.cs" />
