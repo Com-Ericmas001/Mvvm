@@ -139,8 +139,8 @@ namespace Com.Ericmas001.Mvvm.Collections
                         {
                             // Invoke handler in the target dispatcher's thread... 
                             // asynchronously for better responsiveness.
-                            dispatcherObject.Dispatcher.BeginInvoke
-                                  (DispatcherPriority.DataBind, handler, this, e);
+                            dispatcherObject.Dispatcher?.BeginInvoke
+                                (DispatcherPriority.DataBind, handler, this, e);
                         }
                         else
                         {
