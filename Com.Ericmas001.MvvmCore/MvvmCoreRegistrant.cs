@@ -4,10 +4,10 @@ namespace Com.Ericmas001.MvvmCore
 {
     public class MvvmCoreRegistrant : AbstractRegistrant
     {
-        public WindowCreator WindowCreator { get; } = new WindowCreator();
+        public ViewManager ViewManager { get; } = new ViewManager();
         protected override void RegisterEverything()
         {
-            RegisterInstance<IWindowCreator>(WindowCreator);
+            RegisterInstance<IViewManager>(ViewManager);
         }
     }
 }
