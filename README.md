@@ -4,3 +4,6 @@
 
 [![NuGet](https://img.shields.io/badge/package-Com.Ericmas001.Mvvm-blue.svg)](https://www.nuget.org/packages/Com.Ericmas001.Mvvm) [![NuGet](https://img.shields.io/nuget/v/Com.Ericmas001.Mvvm.svg)](https://www.nuget.org/packages/Com.Ericmas001.Mvvm)
 [![NuGet](https://img.shields.io/nuget/dt/Com.Ericmas001.Mvvm.svg?style=social)](https://www.nuget.org/packages/Com.Ericmas001.Mvvm)
+
+[![NuGet](https://img.shields.io/badge/package-Com.Ericmas001.MvvmCore-blue.svg)](https://www.nuget.org/packages/Com.Ericmas001.MvvmCore) [![NuGet](https://img.shields.io/nuget/v/Com.Ericmas001.MvvmCore.svg)](https://www.nuget.org/packages/Com.Ericmas001.MvvmCore)
+[![NuGet](https://img.shields.io/nuget/dt/Com.Ericmas001.MvvmCore.svg?style=social)](https://www.nuget.org/packages/Com.Ericmas001.MvvmCore)
