@@ -12,6 +12,7 @@ using System.ComponentModel;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 
 namespace Com.Ericmas001.MvvmCore
 {
@@ -153,6 +154,11 @@ namespace Com.Ericmas001.MvvmCore
             [CallerMemberName] string propertyName = null)
         {
             return Set(propertyName, ref field, newValue);
+        }
+
+        public virtual async Task OnceLoaded()
+        {
+            await Task.CompletedTask;
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Com.Ericmas001.MvvmCore
     {
         TWindow CreateWindow<TWindow, TViewModel>() where TWindow : Window where TViewModel : ViewModelBase;
         TViewModel CreateViewModel<TViewModel>() where TViewModel : ViewModelBase;
-        TWindow CreateWindow<TWindow>(object viewModel) where TWindow : Window;
+        TWindow CreateWindow<TWindow>(ViewModelBase viewModel) where TWindow : Window;
     }
 
     public class ViewManager : IViewManager
@@ -23,8 +23,8 @@ namespace Com.Ericmas001.MvvmCore
         public TWindow CreateWindow<TWindow, TViewModel>() where TWindow : Window where TViewModel : ViewModelBase
         {
             var window = Host.Services.GetRequiredService<TWindow>();
-            window.DataContext = Host.Services.GetRequiredService<TViewModel>();
-            return window;
+            window.DataContext = CreateViewModel<TViewModel>();
+            return CreateWindow<TWindow>(CreateViewModel<TViewModel>());
         }
 
         public TViewModel CreateViewModel<TViewModel>() where TViewModel : ViewModelBase
@@ -32,10 +32,11 @@ namespace Com.Ericmas001.MvvmCore
             return Host.Services.GetRequiredService<TViewModel>();
         }
 
-        public TWindow CreateWindow<TWindow>(object viewModel) where TWindow : Window
+        public TWindow CreateWindow<TWindow>(ViewModelBase viewModel) where TWindow : Window
         {
             var window = Host.Services.GetRequiredService<TWindow>();
             window.DataContext = viewModel;
+            window.Loaded += async (sender, args) => await viewModel.OnceLoaded();
             return window;
         }
     }

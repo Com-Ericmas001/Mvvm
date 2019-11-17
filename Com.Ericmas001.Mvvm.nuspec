@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Com.Ericmas001.Mvvm</id>
-    <version>7.1.0</version>
+    <version>7.2.0</version>
     <title>Com.Ericmas001.Mvvm</title>
     <authors>Ericmas001</authors>
     <licenseUrl>https://raw.githubusercontent.com/Com-Ericmas001/Mvvm/master/LICENSE</licenseUrl>
