@@ -37,17 +37,15 @@ namespace Com.Ericmas001.Mvvm.ViewModels
                 if (isChanging)
                 {
                     if (value)
-                        Task.WaitAll(OnBeforeExpand());
+                        OnBeforeExpand();
                     else
-                        Task.WaitAll(OnBeforeCollapse());
+                        OnBeforeCollapse();
                 }
                 Set(ref _isExpanded, value);
                 if (isChanging)
                 {
-                    if (value)
-                        Task.WaitAll(OnAfterExpand());
-                    else
-                        Task.WaitAll(OnAfterCollapse());
+                    // ReSharper disable once AssignmentIsFullyDiscarded
+                    _ = value ? OnAfterExpand() : OnAfterCollapse();
                 }
             }
         }
@@ -62,13 +60,11 @@ namespace Com.Ericmas001.Mvvm.ViewModels
             await Task.CompletedTask;
         }
 
-        protected virtual async Task OnBeforeExpand()
+        protected virtual void OnBeforeExpand()
         {
-            await Task.CompletedTask;
         }
-        protected virtual async Task OnBeforeCollapse()
+        protected virtual void OnBeforeCollapse()
         {
-            await Task.CompletedTask;
         }
 
         public FastObservableCollection<TreeElementViewModel> Children { get; } = new FastObservableCollection<TreeElementViewModel>();
