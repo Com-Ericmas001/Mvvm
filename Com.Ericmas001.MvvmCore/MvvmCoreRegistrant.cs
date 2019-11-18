@@ -1,6 +1,6 @@
 ﻿using Com.Ericmas001.DependencyInjection.Registrants;
 
-namespace Com.Ericmas001.MvvmCore
+namespace Com.Ericmas001.Mvvm
 {
     public class MvvmCoreRegistrant : AbstractRegistrant
     {

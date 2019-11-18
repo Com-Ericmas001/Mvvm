@@ -2,25 +2,37 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Com.Ericmas001.Mvvm</id>
-    <version>7.3.0</version>
-    <title>Com.Ericmas001.Mvvm</title>
+    <version>7.4.0</version>
     <authors>Ericmas001</authors>
-    <licenseUrl>https://raw.githubusercontent.com/Com-Ericmas001/Mvvm/master/LICENSE</licenseUrl>
+    <owners>Ericmas001</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
     <projectUrl>https://github.com/Com-Ericmas001/Mvvm</projectUrl>
     <iconUrl>https://github.com/Com-Ericmas001/Common/raw/master/Resources/lib.png</iconUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>Com.Ericmas001.Mvvm</description>
-    <summary>Com.Ericmas001.Mvvm</summary>
+    <description>Com.Ericmas001.MvvmCore</description>
     <releaseNotes>Development Version</releaseNotes>
-    <copyright />
-    <language>en</language>
+    <copyright>Ericmas001</copyright>
     <dependencies>
       <dependency id="Expression.Blend.Sdk" version="1.0.2" />
     </dependencies>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.0">
+        <dependency id="Com.Ericmas001.DependencyInjection" version="6.1.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Hosting" version="3.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net461">
+        <dependency id="Expression.Blend.Sdk" version="1.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework=".NETCoreApp3.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
   </metadata>
   <files>
-    <file src="Com.Ericmas001.Mvvm\bin\$configuration$\Com.Ericmas001.Mvvm.dll" target="lib\net461\" />
-    <file src="Com.Ericmas001.Mvvm\bin\$configuration$\Com.Ericmas001.Mvvm.pdb" target="lib\net461\" />
-    <file src="Com.Ericmas001.Mvvm\bin\$configuration$\Com.Ericmas001.Mvvm.xml" target="lib\net461\" />
+    <file src="Com.Ericmas001.Mvvm\bin\$configuration$\Com.Ericmas001.Mvvm*.*" target="lib\net461\" />
+    <file src="Com.Ericmas001.MvvmCore\bin\$configuration$\netcoreapp3.0\Com.Ericmas001.Mvvm*.*" target="lib\netcoreapp3.0\" />
   </files>
 </package>
