@@ -14,9 +14,6 @@
     <releaseNotes>Development Version</releaseNotes>
     <copyright>Ericmas001</copyright>
     <dependencies>
-      <dependency id="Expression.Blend.Sdk" version="1.0.2" />
-    </dependencies>
-    <dependencies>
       <group targetFramework=".NETCoreApp3.0">
         <dependency id="Com.Ericmas001.DependencyInjection" version="6.1.2" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Extensions.Hosting" version="3.0.0" exclude="Build,Analyzers" />
