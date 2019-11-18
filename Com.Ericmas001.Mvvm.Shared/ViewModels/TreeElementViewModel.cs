@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
 using Com.Ericmas001.Mvvm.Collections;
@@ -30,7 +31,44 @@ namespace Com.Ericmas001.Mvvm.ViewModels
         public bool IsExpanded
         {
             get => _isExpanded;
-            set => Set(ref _isExpanded, value);
+            set
+            {
+                var isChanging = value != _isExpanded;
+                if (isChanging)
+                {
+                    if (value)
+                        Task.WaitAll(OnBeforeExpand());
+                    else
+                        Task.WaitAll(OnBeforeCollapse());
+                }
+                Set(ref _isExpanded, value);
+                if (isChanging)
+                {
+                    if (value)
+                        Task.WaitAll(OnAfterExpand());
+                    else
+                        Task.WaitAll(OnAfterCollapse());
+                }
+            }
+        }
+
+        protected virtual async Task OnAfterCollapse()
+        {
+            await Task.CompletedTask;
+        }
+
+        protected virtual async Task OnAfterExpand()
+        {
+            await Task.CompletedTask;
+        }
+
+        protected virtual async Task OnBeforeExpand()
+        {
+            await Task.CompletedTask;
+        }
+        protected virtual async Task OnBeforeCollapse()
+        {
+            await Task.CompletedTask;
         }
 
         public FastObservableCollection<TreeElementViewModel> Children { get; } = new FastObservableCollection<TreeElementViewModel>();
