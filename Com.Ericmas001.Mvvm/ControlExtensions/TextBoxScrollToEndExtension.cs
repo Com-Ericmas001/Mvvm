@@ -9,7 +9,7 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Com.Ericmas001.Mvvm.ControlExtensions
+namespace Com.Ericmas001.Mvvm.Net461.ControlExtensions
 {
     /// <summary>
     /// TextBoxScrollToEndExtension

@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace Com.Ericmas001.Mvvm
+namespace Com.Ericmas001.Mvvm.NetCore3
 {
     public interface IViewManager
     {

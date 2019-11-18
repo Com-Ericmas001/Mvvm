@@ -11,9 +11,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Interactivity;
 using System.Windows.Media;
-using Com.Ericmas001.Mvvm.Extensions;
+using Com.Ericmas001.Mvvm.Net461.Extensions;
 
-namespace Com.Ericmas001.Mvvm.Behaviors
+namespace Com.Ericmas001.Mvvm.Net461.Behaviors
 {
     /// <summary>
     ///     Behavior that makes the <see cref="TreeView.SelectedItem" /> bindable.

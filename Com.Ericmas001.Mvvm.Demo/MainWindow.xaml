@@ -5,7 +5,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:demo="clr-namespace:Com.Ericmas001.Mvvm.Demo"
-        xmlns:behaviors="clr-namespace:Com.Ericmas001.Mvvm.Behaviors;assembly=Com.Ericmas001.Mvvm"
+        xmlns:behaviors="clr-namespace:Com.Ericmas001.Mvvm.Net461.Behaviors;assembly=Com.Ericmas001.Mvvm"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">

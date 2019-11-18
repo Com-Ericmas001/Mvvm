@@ -7,7 +7,7 @@
     <ProjectGuid>{FF3C4D63-DFED-45CB-B46B-08DC0ADF188B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Com.Ericmas001.Mvvm</RootNamespace>
+    <RootNamespace>Com.Ericmas001.Mvvm.Net461</RootNamespace>
     <AssemblyName>Com.Ericmas001.Mvvm</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

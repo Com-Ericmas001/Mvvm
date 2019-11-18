@@ -10,7 +10,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Media;
 
-namespace Com.Ericmas001.Mvvm.Extensions
+namespace Com.Ericmas001.Mvvm.Net461.Extensions
 {
     /// <summary>
     ///     Extension methods for the <see cref="DependencyObject" /> type.

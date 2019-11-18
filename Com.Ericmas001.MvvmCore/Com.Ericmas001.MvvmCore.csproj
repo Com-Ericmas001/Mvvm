@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <UseWPF>true</UseWPF>
     <AssemblyName>Com.Ericmas001.Mvvm</AssemblyName>
-    <RootNamespace>Com.Ericmas001.Mvvm</RootNamespace>
+    <RootNamespace>Com.Ericmas001.Mvvm.NetCore3</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

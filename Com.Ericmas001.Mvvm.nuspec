@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Com.Ericmas001.Mvvm</id>
-    <version>7.4.0</version>
+    <version>7.5.0</version>
     <authors>Ericmas001</authors>
     <owners>Ericmas001</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -10,6 +10,7 @@
     <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
     <projectUrl>https://github.com/Com-Ericmas001/Mvvm</projectUrl>
     <iconUrl>https://github.com/Com-Ericmas001/Common/raw/master/Resources/lib.png</iconUrl>
+    <icon>icon.png</icon>
     <description>Com.Ericmas001.MvvmCore</description>
     <releaseNotes>Development Version</releaseNotes>
     <copyright>Ericmas001</copyright>
@@ -29,6 +30,7 @@
     </frameworkReferences>
   </metadata>
   <files>
+    <file src="icon.png" target="icon.png" />
     <file src="Com.Ericmas001.Mvvm\bin\$configuration$\Com.Ericmas001.Mvvm*.*" target="lib\net461\" />
     <file src="Com.Ericmas001.MvvmCore\bin\$configuration$\netcoreapp3.0\Com.Ericmas001.Mvvm*.*" target="lib\netcoreapp3.0\" />
   </files>
