@@ -7,6 +7,16 @@ using Com.Ericmas001.Mvvm.Collections;
 
 namespace Com.Ericmas001.Mvvm.ViewModels
 {
+    public abstract class TreeElementViewModel<T> : TreeElementViewModel where T : class
+    {
+        public new T Model { get; private set; }
+        public virtual TreeElementViewModel<T> Init(TreeElementViewModel parent, T model)
+        {
+            base.Init(parent, model);
+            Model = model;
+            return this;
+        }
+    }
     public abstract class TreeElementViewModel : ViewModelBase
     {
         private bool _isExpanded;
@@ -26,6 +36,7 @@ namespace Com.Ericmas001.Mvvm.ViewModels
         public FastObservableCollection<TreeElementViewModel> Children { get; } = new FastObservableCollection<TreeElementViewModel>();
 
         public TreeElementViewModel Parent { get; private set; }
+        public object Model { get; private set; }
         public abstract string Text { get; }
         public bool HasOnlyOneLeaf => NbLeaves == 1;
         public TreeElementViewModel FirstLeaf => TreeLeaves.FirstOrDefault();
@@ -37,10 +48,10 @@ namespace Com.Ericmas001.Mvvm.ViewModels
         public bool CanCollapse => HasChildren && IsExpanded;
 
 
-        public TreeElementViewModel Init(TreeElementViewModel parent)
+        public virtual TreeElementViewModel Init(TreeElementViewModel parent, object model)
         {
             Parent = parent;
-
+            Model = model;
             return this;
         }
         public void Expand()
