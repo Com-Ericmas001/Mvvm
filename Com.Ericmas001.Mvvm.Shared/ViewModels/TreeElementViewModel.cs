@@ -11,11 +11,10 @@ namespace Com.Ericmas001.Mvvm.ViewModels
     public abstract class TreeElementViewModel<T> : TreeElementViewModel where T : class
     {
         public new T Model { get; private set; }
-        public virtual TreeElementViewModel<T> Init(TreeElementViewModel parent, T model)
+        public virtual void Init(TreeElementViewModel parent, T model)
         {
             base.Init(parent, model);
             Model = model;
-            return this;
         }
     }
     public abstract class TreeElementViewModel : ViewModelBase
@@ -82,11 +81,10 @@ namespace Com.Ericmas001.Mvvm.ViewModels
         public bool CanCollapse => HasChildren && IsExpanded;
 
 
-        public virtual TreeElementViewModel Init(TreeElementViewModel parent, object model)
+        public virtual void Init(TreeElementViewModel parent, object model)
         {
             Parent = parent;
             Model = model;
-            return this;
         }
         public void Expand()
         {
