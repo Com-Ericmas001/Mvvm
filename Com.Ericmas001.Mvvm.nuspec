@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Com.Ericmas001.Mvvm</id>
-    <version>7.5.3</version>
+    <version>7.5.4</version>
     <authors>Ericmas001</authors>
     <owners>Ericmas001</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -11,7 +11,7 @@
     <projectUrl>https://github.com/Com-Ericmas001/Mvvm</projectUrl>
     <iconUrl>https://github.com/Com-Ericmas001/Common/raw/master/Resources/lib.png</iconUrl>
     <icon>icon.png</icon>
-    <description>Com.Ericmas001.MvvmCore</description>
+    <description>Com.Ericmas001.Mvvm</description>
     <releaseNotes>Development Version</releaseNotes>
     <copyright>Ericmas001</copyright>
     <dependencies>
